@@ -13,6 +13,7 @@ const Details = ({ movie }) => {
       value: entry[1],
     }));
 
+  console.log(movie?.Ratings);
   return (
     <>
       <Link to="/">{"< Back"}</Link>
@@ -30,14 +31,15 @@ const Details = ({ movie }) => {
           loading="eager"
           style={{ marginBottom: "3rem", borderRadius: "5px" }}
         />
+
         <Grid container justifyContent={"center"}>
-          {movie?.Ratings.map((detail) => (
+          {list.map((detail) => (
             <DetailItem value={detail.value} label={detail.label} />
           ))}
         </Grid>
         <Grid container justifyContent={"center"}>
-          {list.map((detail) => (
-            <DetailItem value={detail.value} label={detail.label} />
+          {movie?.Ratings.map((detail) => (
+            <DetailItem value={detail.Value} label={detail.Source} />
           ))}
         </Grid>
       </div>
