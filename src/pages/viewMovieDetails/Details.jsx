@@ -13,7 +13,6 @@ const Details = ({ movie }) => {
       value: entry[1],
     }));
 
-  console.log(movie?.Ratings);
   return (
     <>
       <Link to="/">{"< Back"}</Link>
