@@ -1,5 +1,5 @@
 export const GET_MOVIES = "getMovies";
-export const OMDB_URL = "http://www.omdbapi.com/";
+export const OMDB_URL = "https://www.omdbapi.com/";
 
 // The following api key should never be here normally.
 // If there was a backend, this key would be stored safely in the backend
